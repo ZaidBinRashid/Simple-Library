@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #62cd9b;
+}
+
+h1{
+  text-decoration: underline;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+
+input{
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: large;
+  border-radius: 4px;
+  border: 1px solid #949494;
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+#openFormButton{
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: larger;
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: #22c55e;
+  cursor: pointer;
+}
+
+#closeFormButton{
+  border: none;
+  border-radius: 20px;
+  background-color: #8edcb8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.submit-btn{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 24%;
+  padding: 6px;
+  width: 50%;
+  font-size: medium;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  background-color:  #22c55e;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#read{
+ position: absolute;
+ right: 35px;
+ bottom: 90px;
+}
+
+#my-library{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-left: 8px;
+}
+
+#my-library > div{
+  margin-right: 16px;
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #b2f7dc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.remove-btn, .toggle-read-btn{
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #63f7af;
+  padding: 6px;
+  font-weight: 600;
+}
